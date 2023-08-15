@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+    <script src="../scripts/addRemoveScript.js"></script>
+    <link rel="stylesheet" href="../css/addRemove.css">
+    <title>Add and Remove Elements</title>
+</head>
+
+<body>
+    <div id="head">
+        <ul id="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="addRemove?">Add and Remove Elements</a></li>
+            <li><a href="uploadFile?">Upload SDF File</a></li>
+            <li><a href="selectMol?">Select Molecules</a></li>
+        </ul>
+    </div>
+    <h1 id="h1">Add and Remove Elements</h1>
+    <!-- <form action="http://localhost/53937/addRemove/server.py" enctype="multipart/form-data" method="post"> -->
+    <form action="/addedRemoved" enctype="multipart/form-data" method="post" id="form">
+        <p id="paragraph">
+            <label for="elementNum">Element Number</label><br>
+            <input type="text" id="elementNum" name="elementNum" required><br>
+            <label for="elementCode">Element Code</label><br>
+            <input type="text" id="elementCode" name="elementCode" required><br>
+            <label for="elementName">Element Name</label><br>
+            <input type="text" id="elementName" name="elementName" required><br>
+            <LABEL for="colors">Select 3 Colors</LABEL><br>
+            <SELECT id="colors" name="colors" multiple required>
+                <OPTION value="FFFFFF">FFFFFF</OPTION>
+                <OPTION value="050505">050505</OPTION>
+                <OPTION value="020202">020202</OPTION>
+                <OPTION value="808080">808080</OPTION>
+                <OPTION value="010101">010101</OPTION>
+                <OPTION value="000000">000000</OPTION>
+                <OPTION value="0000FF">0000FF</OPTION>
+                <OPTION value="000005">000005</OPTION>
+                <OPTION value="000002">000002</OPTION>
+                <OPTION value="FF0000">FF0000</OPTION>
+                <OPTION value="050000">050000</OPTION>
+                <OPTION value="020000">020000</OPTION>
+                <!-- <OPTION value="Red">Red</OPTION>
+                <OPTION value="Blue">Blue</OPTION> -->
+            </SELECT><br>
+            <LABEL for="radius">Select the Radius Size</LABEL><br>
+            <SELECT id="radius" name="radius" size="1" required>
+                <OPTION value="25">25</OPTION>
+                <OPTION value="40">40</OPTION>
+            </SELECT><br>
+            <input type="submit" id="add" value="Add Element">
+            <input type="submit" id="remove" value="Remove Element">
+        </p>
+        <!-- <div id="d1"></div> -->
+        <div id="d2">
+            <h3 id="h3">Elements</h3>
+            <p id="elements"></p>
+        </div>
+    </form>
+</body>
+
+</html>

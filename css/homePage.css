@@ -1,0 +1,53 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #e5e5e5;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    color: #14213d;
+    font-size: 45px;
+}
+
+#buttons {
+    display: block;
+    text-align: center;
+}
+
+input {
+    margin-top: 30px;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    color: #14213d;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #14213d;
+}
+
+li {
+    float: left;
+    padding: 5px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}

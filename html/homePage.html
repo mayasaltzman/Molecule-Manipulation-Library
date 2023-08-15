@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+    <link rel="stylesheet" href="../css/homePage.css">
+    <title> Home </title>
+</head>
+
+<body>
+    <div id="header">
+        <ul id="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="addRemove?">Add and Remove Elements</a></li>
+            <li><a href="uploadFile?">Upload SDF File</a></li>
+            <li><a href="selectMol?">Select Molecules</a></li>
+        </ul>
+        <h1> Molecule Manipulation </h1>
+    </div>
+    <div id="buttons">
+        <form action="addRemove" enctype="multipart/form-data" method="get">
+            <p>
+                <input type="submit" id="addRemove" value=" add and remove elements" />
+            </p>
+        </form>
+        <form action="uploadFile" enctype="multipart/form-data" method="get">
+            <p>
+                <input type="submit" id="upload" value="upload SDF files" />
+            </p>
+        </form>
+        <form action="selectMol" enctype="multipart/form-data" method="get">
+            <p>
+                <input type="submit" id="select" value="select molecules" />
+            </p>
+        </form>
+    </div>
+
+</body>
+
+</html>

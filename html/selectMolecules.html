@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+    <script src="../scripts/selectMoleculesScript.js"></script>
+    <link rel="stylesheet" href="../css/selectMolecules.css">
+    <title>Select Molecules</title>
+</head>
+
+<body>
+    <div>
+        <ul id="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="addRemove?">Add and Remove</a></li>
+            <li><a href="uploadFile?">Upload SDF File</a></li>
+            <li><a href="selectMol?">Select Molecules</a></li>
+        </ul>
+    </div>
+    <h1>Select Molecules</h1>
+    <form action="form_data">
+        <p id="p1">
+            <LABEL for="molecule">Select a Molecule</LABEL><br>
+            <SELECT id="molecule" name="molecule" size="1" required></SELECT><br>
+        </p>
+        <p id="p2">
+            <button type="submit" id="display">Display Molecule</button>
+        </p>
+    </form>
+    <p id="rotations"></p>
+    <div id="svg"></div>
+</body>
+
+</html>
